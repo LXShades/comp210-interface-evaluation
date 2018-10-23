@@ -31,6 +31,13 @@
  	vertical-align: baseline;
  }
  
+ table, tr, td, th {
+	 border: medium ridge #4b4b71;
+	 background-color: lightgray;
+	 padding: 0.2em;
+ }
+
+ 
  p {
 	 margin: 1em;
  }
@@ -103,6 +110,13 @@ aside{
   float:left;
   background: #4090E8;
 }
+.figure {
+	font-size: 90%;
+	font-style: italic;
+	text-align: center;
+	margin: auto;
+	display: table;
+}
 nav ul{
   margin:10px;
 }
@@ -124,11 +138,11 @@ nav ul li a.selected{
   background: #5898c8;
 }
 nav ul li a:hover{
-  background: #888;
+  background: #424262;
 }
 section{
   width:65%;
-  min-height:300px;
+  min-height:200px;
   background: #50b0E8;
   float: right;
   margin:1em;
