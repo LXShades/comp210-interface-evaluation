@@ -34,45 +34,66 @@
             </ul>
           </nav>
         </aside>
-
+		<section>
+		<h3>Comparison of evaluations</h3>
+		<h4>Character control</h4>
+		<p>The player evaluation demonstrated that the Static Bunny character was generally preferred to the Homing Pigeon character in gameplay. The idea, however, is appreciated: were both characters designed perfectly, the preferences may be about the same. Potential flaws in the pigeon include difficulty aiming, struggling to see characters from long distances, and respawn time as a result of the kamikaze explosion. The Static Bunny's flaws included some difficulty controlling it while climbing walls. There is justification in improving the pigeon in these areas such that it can match the player's ideal perception.</p>
+		<p>However, the results of the heuristic evaluation told a different story about the pigeon: The pigeon is notably hard to hit by the bunnies. In combination, this suggests that the pigeon is in fact powerful - as it is very hard to hit - but due to its controls and respawn time, it is also hard for the pigeon to hit other players. This dynamic was acknowledged by one heuristic evaluator (A). This paints an amusing portrayal of a pigeon that is in fact quite powerful but at constant war with its own self. It is undecided which is the core issue here, but one suggestion is to <b>add a new character</b> that can counter the pigeon's defenses, perhaps with, for example a tracking missile. This, however, is expensive to implement in a short-term, and it is questionable whether it provides a solution to the HCI issues at hand.</p>
+		<p>On a smaller scale, the pigeon's respawn time <b>could be reduced</b> and its <b>controls could be improved</b>.</p>
+		<h4>Understanding control</h4>
+		<p>The heuristic evaluation discovered a flaw that could not have been addressed in the player evaluation: the lack of a tutorial. This was no issue within the latter, as the players were introduced to controls. However, the questionable experts indicated that a lack of tutorial for the characters could make the game potentially confusing to play. A potential solution was proposed: <b>Add tutorial texts in the base</b>. This solution is a very cheap and fast solution, as a HUD engine is already available in the game. However, this change will have no useful impact to those who have learned the controls through guessing or reading a guide.</p>
+		<h4>Audio feedback</h4>
+		<p>Interestingly, this issue was also addressed raised only within the heuristic evaluation. The lack of audio in the game creates a gap in potential player feedback and immersion. The best solution is simply to <b>add sound effects and music</b>, with sound effects taking a slightly higher precedence, but this would take a lot of time, and the talent is not currently available.</p>
+		</section>
+		<section>
+		<h3>Key areas of improvement</h3>
+		<p>Throughout the analysis and discussion of results, the following changes were preliminarily proposed:</p>
+		<ul>
+		<li><b>Addition of a tutorial in the base</b> to introduce unfamiliar players to the controls</li>
+		<li><b>Improvement of the pigeon's controls</b> to reduce frustration with the pigeon</li>
+		<li><b>Add sound and music</b> to improve feedback and immersion</li>
+		<li><b>Add a new character</b> to make it easier to hit the pigeon</li>
+		<li><b>Reduce the respawn time of the pigeon</b></li>
+		</ul>
+		<p>Of these, two reasonably achievable improvements have been identified and will be actioned in the next iteration of the game.</p>
+		<h4>Improvement 1:</h4>
+		<p>One of the quickest and cheapest solutions to a highly-rated issue is the addition of a tutorial. This, in its simplest form, can leverage the existing HUD system, making it an addition that should take no longer than a day to program. This makes it a highly achievable change to make in a short time, and will be of primary benefit to new players, and could offer a large boost to accessibility in a worldwide release scenario.</p>
+		<p>The tutorial information will be delivered to the player by displaying it on the HUD in the base. Since the base is a safe place from the battlefield in-game, and also the starting area when a player respawns, this is a highly suitable place to give the player tutorials without distracting from the core gameplay.</p>
+		<p>A message recommending the player to "hold the F1 button to view your abilities" will be shown while they are in the base, along with another message "jump into the logs to change character" (noting respondent B's suggestion in heuristic G). These will clearly inform the player that extensive controls and character information is available should they need it. The message will disappear when the player is outside the base, making it non-invasive for the rest of the game. Specific character information, such as its controls, will be displayed over a translucent black box when the player presses the F1 key.</p>
+		<h4>Improvement 2:</h4>
+		<p>The second most reasonably achievable solution is the pigeon's respawn time. Currently, the pigeon shares the same respawn time as the bunny. However, as dying in an explosion is a core feature of the pigeon, it would aid the player to slightly reduce its respawn time.</p>
+		<p>In fact, the pigeon explodes twice when it attacks: once when it hits the player, and again after it shoots off in a rainbow trail. The latter occurs after two seconds of shooting off. Concurrent to the explosion, a free camera is granted to the player for them to look around as the respawn timer starts.</p>
+		<p>For the next iteration of the game, the pigeon will be changed so that the respawn timer and free camera is granted as soon as the pigeon explodes. This grants the player two benefits: one, a reduction in respawn time by about two seconds so they can stay in the flow of the game; and two, the immediate camera freedom will allow them to see how close they were to hitting their target, possibly helping them to improve their aim for next time. This kills two pigeons with one stone.</p>
+		<p>Similarly to the addition of a tutorial, this change will be easy to implement in a day at the most.</p>
+		<h4>Postponed improvements</h4>
+		<p>The other improvements are currently either too vague or too large-scale or expensive to implement. In the future, further analysis and design can be applied to develop a strategy to improve these.</p>
+		</section>
         <section>
-		<h2>Player evaluation: Discussion</h2>
+		<h2>Player evaluation retrospective</h2>
 		<h3>Sample and bias considerations</h3>
 		<p>A noteworthy threat to the validity of the data was the sample size (N = 8). While the small sample size made the evaluation manageable in the short time available, the outliers of the quantitative data (from the Likert scales) could skew the responses.</p>
 		<p>After their selection, the players had no opposition to the recording of the participants' screens with OBS, eliminating any selection bias between those who did or did not volunteer to record. However, there is likely to be selection bias resulting from the academic setting: both evaluations took place in the games academy studio, where the sample was chosen. This notably restricted the demographic to: academics, predominantly males, gamers, late teens/early 20's, and people with an overall greater understanding of the game development process than usual.</p>
 		<p>In many ways, this sample is not representative of the casual playerbase which Critical Critters targets. Nonetheless, the input of academics with game development experience provides additional expertise which may aid the developer in creating solutions to discovered issues.</p>
+		<p>A future evaluation could be sent out to a wider audience to improve the precision of quantitative results and remove bias. Analysis of qualitative results would be harder, but could be aided with the adoption of different techniques, such as word clouds. Vitally, the questionnaire could be sent out to a wider, open audience with more varied demographic backgrounds, perhaps by distributing it on the Internet in a casual gaming hotspot.</p>
 		
-		<h3>Question format</h3>
+		<h3>Questions and errors</h3>
+		<h4>Ability-specific question issues</h4>
 		<p>In addition to the generic character-based questions, the Homing Pigeon was granted two more questions, also in the form of Likert scales:</p>
 		<ul>
 			<li>I found it easy to hit players</li>
 			<li>I lit my fuse regularly</li>
 		</ul>
-		<p>The rationale behind these questions was to address subtleties in controlling the character. However, the uniqueness of the fuse ability made it impossible to compare with other abilities, devaluating it as a piece of data. The responses enabled the observer to understand whether the player lit their fuse, but not much more.</p>
-		</section>
+		<p>The rationale behind these questions was to address subtleties in controlling the character. However, the uniqueness of the fuse ability made it impossible to compare with other abilities, devaluating it as a piece of data. The responses enabled the observer to understand whether the player lit their fuse, but not much more. A future survey would likely adopt the first question 'I found it easy to hit players' across both characters instead of just the homing pigeon, and remove the character-specific question, to enable a clearer comparison between the characters so that they can be better balanced.</p>
 		
-		<section>
-		<h3>Improvements to the next evaluation</h3>
-		<p>A future evaluation could be sent out to a wider audience to improve the precision of quantitative results and remove bias. Analysis of qualititative results would be harder, but could be aided with the adoption of different techniques, such as word clouds. Vitally, the questionnaire could be sent out to a wider, open audience with more varied demographic backgrounds, perhaps by distributing it on the Internet in a casual gaming hotspot.</p>
-		<p>The pigeon-specific questions could be improved
+		<h4>Open questions</h4>
+		<p>During their interpretation, the open questions, while useful, could have been implicitly linked to one of the characters by the reader. This made it difficult to identify the gameplay context. For example, a response of "difficult to hit players" would be unclear as to whether the player was playing the pigeon or bunny characters, both characters with difficult attack methods.</p>
+		<p>In a future survey, it would be useful to separate the open questions between the character, so that it is clearer which elements of which characters were liked and disliked. This could improve the clarity.</p>
+		<p>Many of the questions related to player frustration, but it was uncertain whether this was caused by control issues or power balance. As such, it may also be useful to add a Likert scale for the following statement: <i>'I felt powerful as this character'</i>. This could help identify whether the source of frustration was indeed the player's ability to control the character, or perhaps the strength and resilience of the character (independent to how effectively the player can actually utilise their abilities).</p>
 		</section>
-		
-		<section>
-		<h3>Player evaluation: Key takeaways</h3>
-		<p>The results of the player evaluation resulted in the following key points:</p>
-		<ul>
-		<li>Praise was broadly given to the ability to move around quickly</li>
-		<li>Some praise was given to the ability to fly as the pigeon</li>
-		<li>Difficulty was experienced in aiming</li>
-		<li>Overall, the pigeon is less enjoyable to play</li>
-		<li>Players who preferred the aesthetic of the pigeon enjoyed the overall experience less</li>
-		<li>According to respondents, if the characters were designed optimally, the enjoyment of each character would be roughly well-balanced</li>
-		</ul>
-		<p>Due to the consistency of data that favoured the bunny over the pigeon, priority will be given to the improvement of the pigeon. An analysis of the heuristic evaluation results may help in finding specific solutions.</p>
-		</section>
+	
       </div>
       <footer>
-        <h2>Louis F. 2018</h2>
+        <h2>Louis F. - October 2018</h2>
       </footer>
     </div>
  	</body>
